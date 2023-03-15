@@ -72,8 +72,8 @@ vim.o.background = 'dark'
 -- For light theme
 vim.o.background = 'light'
 
-local c = require('vscode.colors').get_colors()
-require('vscode').setup({
+local c = require('vscode-theme.colors').get_colors()
+require('vscode-theme').setup({
     -- Alternatively set style in setup
     -- style = 'light'
 
@@ -101,7 +101,7 @@ require('vscode').setup({
         Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
     }
 })
--- require('vscode').load()
+-- require('vscode-theme').load()
 
 -- load the theme without affecting devicon colors.
 vim.cmd.colorscheme "vscode"
@@ -188,8 +188,8 @@ require("bufferline").setup({
 ## Switching theme
 
 ```
-:lua require('vscode').load('light')
-:lua require('vscode').load('dark')
+:lua require('vscode-theme').load('light')
+:lua require('vscode-theme').load('dark')
 ```
 
 ## 🍭 Extra folder
