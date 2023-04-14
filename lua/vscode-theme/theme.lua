@@ -158,6 +158,9 @@ theme.set_highlights = function(opts)
     hl(0, '@diff.minus', { link = 'DiffDelete' })
     hl(0, '@diff.delta', { link = 'DiffChange' })
 
+    hl(0, '@text.diff.add', { link = 'DiffAdd' })
+    hl(0, '@text.diff.delete', { link = 'DiffDelete' })
+
     -- LSP semantic tokens
     hl(0, '@type.builtin', { link = '@type' })
     hl(0, '@lsp.typemod.type.defaultLibrary', { link = '@type.builtin' })
